@@ -1,0 +1,97 @@
+/* API.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    padding:20px;
+}
+
+#container{
+    width:420px;
+    background:#ffffff;
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+h1{
+    color:#3d3d3d;
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+#joke-container{
+    background:#f7f9fc;
+    padding:25px;
+    border-radius:18px;
+    min-height:120px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:25px;
+    color:#555;
+    font-size:1.1rem;
+    line-height:1.6;
+    border-left:5px solid #66a6ff;
+}
+
+#loadJokeBtn{
+    border:none;
+    padding:14px 28px;
+    border-radius:30px;
+    background:linear-gradient(45deg, #667eea, #764ba2);
+    color:white;
+    font-size:1rem;
+    font-weight:500;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#loadJokeBtn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(118,75,162,0.3);
+}
+
+#jokeImg{
+    width:150px;
+    margin-top:25px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+#jokeImg:hover{
+    transform:scale(1.05);
+}
+
+#loadingJoke{
+    color:#777;
+    font-style:italic;
+}
+
+@media(max-width:500px){
+    #container{
+        width:100%;
+        padding:25px;
+    }
+
+    h1{
+        font-size:1.7rem;
+    }
+
+    #jokeImg{
+        width:120px;
+    }
+}
